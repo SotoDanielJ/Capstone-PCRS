@@ -1,0 +1,9 @@
+@keyframes colorChange {
+  0%   {background-color: black;}
+  16%  {background-color: red;}
+  32%  {background-color: green;}
+  48% {background-color: purple;}
+  64% {background-color: pink;}
+  80% {background-color: orange;}
+  100% {background-color: yellow;}
+}

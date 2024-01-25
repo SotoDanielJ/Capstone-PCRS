@@ -1,0 +1,90 @@
+/* ProductSlider.css */
+
+.ProductSlider {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.29);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(9px);
+-webkit-backdrop-filter: blur(9px);
+border: 1px solid rgba(255, 255, 255, 0.33);
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.ProductSlider:hover {
+  background-color: lightblue;
+}
+
+.ProductSlider p {
+  color: white;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ProductSlider img {
+  width: 100%; /* Set your desired width */
+  max-width: 300px;
+  max-height: 300px;
+
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.ProductSlider button {
+  margin: auto;
+  height: 50px;
+  
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.ProductSlider button:hover {
+  background-color: #45a049;
+}
+
+.slider-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ProductSlider img:hover {
+  transform: scale(1.05);
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .ProductSlider {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .ProductSlider button {
+    padding: 10px;
+  }
+}

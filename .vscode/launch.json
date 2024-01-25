@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PcrsApplication<pcrs>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.pcrs.pcrs.PcrsApplication",
+            "projectName": "pcrs",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

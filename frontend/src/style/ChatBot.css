@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+.page-container {
+  display: flex;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-chatpage {
+  border-radius: 10px;
+
+  display: flex;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(255, 255, 255, 0.33);
+  flex-direction: column;
+ /* Adjust the background color and opacity */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 15vw;
+}
+
+.sidebar-button {
+  color: white;
+  background-color: #4caf50; /* Green background color */
+
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.save-button,
+.clear-button,
+.clear-history-button {
+  background-color: #4caf50; /* Green background color */
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 70%;
+}
+.chat-container {
+  border-radius: 16px;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(255, 255, 255, 0.33);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+/* .chat-box {
+  overflow-y: auto;
+  max-height: 400px;
+  flex: 1; 
+} */
+
+.message-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.user-message,
+.bot-message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.user-message {
+  background-color: #666;
+  color: white;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: green;
+  color: white;
+  align-self: flex-start;
+}
+
+.input {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #888; /* Darker gray border */
+  border-radius: 5px;
+  margin-right: 10px;
+}
+form {
+  margin-top: auto; /* Push the form to the bottom */
+  display: flex;
+}
+.submit-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
